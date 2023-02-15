@@ -5,7 +5,6 @@ class InteractableCircleObject {
   int directionY;
   int radius;
   float speed;
-  PImage image;
   color c;
   
   InteractableCircleObject(int _x, int _y, int _r) {
@@ -22,9 +21,6 @@ class InteractableCircleObject {
     ellipse(x, y, radius*2, radius*2);
   }
   
-  void SetImage(PImage img) {
-    image = img;  
-  }
   
   void SetSpeed(float _s) {
     speed = _s;
